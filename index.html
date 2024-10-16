@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="ele1">
+        <a href="#home" style="color: orange;"><i class="fa-solid fa-utensils"></i> Restoran</a>
+        
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Desktop Menu -->
+        <div class="ele1a">
+            <div class="ele1a1">
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#services">SERVICES</a>
+                <a href="#menu">MENU</a>
+                <div class="ele1a2">
+                    <a href="#" class="nav-link dropdown-toggler" onclick="toggleDropdown(event)">PAGES</a>
+                    <div class="dropdown-menu m-0" id="dropdownMenu">
+                        <a href="#booking" class="dropdown-item">Booking</a>
+                        <a href="#team" class="dropdown-item">Our Team</a>
+                    </div>
+                </div>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <a href="#booking"><button class="lasta">BOOK A TABLE</button></a>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#services">SERVICES</a>
+            <a href="#menu">MENU</a>
+            <a href="#booking">BOOKING</a>
+            <a href="#team">OUR TEAM</a>
+            <a href="#contact">CONTACT</a>
+            <button class="lasta">BOOK A TABLE</button>
+        </div>
+    </nav>
+
+
+
+    <section class="ele2" id="home">
+        <div class="ele2a" data-aos="fade-right">
+            <p class="p2a">Enjoy Our</p>
+            <p class="p2a">Delicious Meal</p>
+            <p class="p2b">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <div class="btn">
+                <a href="#booking"><button>Book A Table</button></a>
+            </div>
+        </div>
+        <div class="ele2b">
+            <img src="assets/hero.png" alt="" style="opacity:0.7">
+        </div>
+    </section> 
+     
+
+
+    <section class="ele3" id="services">
+        <div class="ele3a" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-user-tie fa-2xl" style="color: orange; font-size: 2.5em;"></i>
+            <h3 style="font-family: Nunito, sans-serif; font-weight: 700;">Master Chefs</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="ele3a" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-utensils fa-2xl" style="color: orange; font-size: 2.5em;"></i>
+            <h3 style="font-family: Nunito, sans-serif; font-weight: 700;">Quality Food</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="ele3a" data-aos="fade-up" data-aos-delay="600">
+            <i class="fa-solid fa-cart-plus fa-2xl" style="color: orange;font-size: 2.5em; "></i>
+            <h3 style="font-family: Nunito, sans-serif; font-weight: 700;">Online Order</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+        <div class="ele3a" data-aos="fade-up" data-aos-delay="900">
+            <i class="fa-solid fa-headset fa-2xl" style="color: orange; font-size: 2.5em;"></i>
+            <h3 style="font-family: Nunito, sans-serif; font-weight: 700;">24/7 Service</h3>
+            <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+        </div>
+    </section>
+    
+
+
+
+     <section class="ele4" id="about">
+        <div class="ele4a" data-aos="fade-up">
+            <img src="assets/about-1.jpg" alt=""  class="img1" data-aos="zoom-in">
+            <img src="assets/about-2.jpg" alt="" class="img2" data-aos="zoom-in">
+            <img src="assets/about-3.jpg" alt="" class="img3" data-aos="zoom-in">
+            <img src="assets/about-4.jpg" alt="" class="img4" data-aos="zoom-in">
+        </div> 
+        <div class="ele4b" data-aos="fade-up">
+            <p class="p4b1 hr-lines">About Us</p>
+            <h1 style="padding-left: 2%;">Welcome to<i class="fa-solid fa-utensils fa-lg" style="color: orange;"></i>Restoran</h1>
+            <p class="p4b2" style="padding:5% 2%;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+            <p class="p4b2" style="padding:5% 2%;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <div class="ele4b1" style="padding:8% 0%;">
+                <div class="ele4ba">
+                    <div class="counter" id="counter1" style="padding-left:1rem;">0</div>
+                    <p class="p4ba1">Years of<br><span>Experience</span></p> 
+                </div>
+
+                <div class="ele4bb">
+                    <div class="counter" id="counter2" style="padding-left:1rem;">0</div>
+                    <p class="p4bb1">Years of<br><span>Experience</span></p> 
+                </div>
+            </div>
+            <div style="padding-left:3%"><button style="padding:3% 5%; border:none">READ MORE</button></div>
+        </div>   
+    </section> 
+
+
+     <section class="ele5" id="menu" data-aos="fade-up">
+        <div class="ele5a" data-aos="fade-up">
+            <p class="hr-lines1">Food Menu</p>
+            <h1>Most Popular Items</h1>
+        </div>
+        <div class="ele5b" data-aos="fade-up">
+            <div class="ele5b1">
+                <i class="fa-solid fa-mug-saucer fa-2xl" style="color: orange;"></i>
+                <p><span class="p5b1">Popular</span></span><br><span class="p5b2">Breakfast</span></p>
+            </div>
+            <div class="ele5b1">
+                <i class="fa-solid fa-burger fa-2xl" style="color: orange;"></i>
+                <p><span class="p5b1">Special</span><br><span class="p5b2">Lunch</span></p>
+            </div>
+            <div class="ele5b1">
+                <i class="fa-solid fa-utensils fa-2xl" style="color: orange"></i>
+                <p><span class="p5b1">Lovely</span><br><span class="p5b2">Dinner</span></p>
+            </div>
+        </div>
+        <hr class="hr5" data-aos="fade-up">
+        <div class="ele5c" data-aos="fade-up">
+            <div class="ele5c1">
+                <div class="e5">
+                    <img src="assets/burger.jpg" alt="" class="img5">
+                    <div class="e51">
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu1.jpeg" alt="" class="img5">
+                    <div class="e51">
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu2.jpeg" alt="" class="img5">
+                    <div>
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu3.jpg" alt="" class="img5">
+                    <div>
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ele5c2">
+                <div class="e5">
+                    <img src="assets/burger.jpg" alt="" class="img5">
+                    <div class="e51">
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu1.jpeg" alt="" class="img5">
+                    <div class="e51">
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu2.jpeg" alt="" class="img5">
+                    <div>
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+                <div class="e5">
+                    <img src="assets/menu3.jpg" alt="" class="img5">
+                    <div>
+                        <div class="e5sub">
+                            <p class="chicken">Chicken Burger</p>
+                            <p class="dollar">$115</p>
+                        </div>
+                        <hr style="margin:1%">
+                        <p style="font-style: italic;opacity: 0.7;">Ipsum ipsum clita erat amet dolor justo diam</p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+
+
+
+    <section class="sec1" data-aos="fade-up">
+        <div class="container">
+            <div>
+              <div class="content">
+                <h2 style="font-family: Times New Roman;">Golden Food</h2>
+                <span>Special Items</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2 style="font-family: Times New Roman;">Golden Food</h2>
+                <span>Special Items</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2 style="font-family: Times New Roman;">Golden Food</h2>
+                <span>Special Items</span>
+              </div>
+            </div>
+            <div>
+              <div class="content">
+                <h2 style="font-family: Times New Roman;">Golden Food</h2>
+                <span>Special Items</span>
+              </div>
+            </div>
+          </div>
+    </section> 
+
+
+
+
+    <section class="ele6" id="booking" style="overflow-x: hidden;" data-aos="fade-up">
+        <img src="https://wallpapercave.com/wp/wp1874155.jpg" alt="" width="100px"  data-aos="fade-right">
+        <div class="ele6b"  data-aos="fade-left">
+            <div>
+                <p class="reservation hr-lines2">Reservation</p>
+                <p class="bookatable">Book A Table Online</p>
+            </div>
+            <form class="form" action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email"><br>
+                <input type="text" placeholder="Date & Time">
+                <select name="" id="">
+                    <option value="" disabled selected hidden>No Of People</option>
+                    <option value="">people 1</option>
+                    <option value="">People 2</option>
+                    <option value="">People 3</option>
+                </select><br>
+                <textarea name="" id="" placeholder="Special Request"></textarea><br>
+                <button>Book Now</button>
+            </form>
+        </div>
+    </section> 
+
+
+
+    <section class="ele7" id="team">
+        <div class="ele7a" data-aos="fade-up">
+            <p class="hr-lines3">Team Members</p>
+            <p>Our Master Chefs</p>
+        </div>
+        <div class="ele7b" data-aos="fade-up">
+            <div class="ele7b1">
+                <div class="img6">
+                    <img src="assets/team-1.jpg" alt="">
+                </div>
+                <p>Full Name</p>
+                <p>Designation</p>
+                <div class="ele7b1a">
+                    <i class="fa-brands fa-facebook-f fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram fa-sm" style="color: white;"></i>
+                </div>
+            </div>
+            <div class="ele7b1">
+                <div class="img6">
+                    <img src="assets/team-2.jpg" alt="">
+                </div>
+                <p>Full Name</p>
+                <p>Designation</p>
+                <div class="ele7b1a">
+                    <i class="fa-brands fa-facebook-f fa-sm face" style="color:white;"></i>
+                    <i class="fa-brands fa-twitter fa-sm twitter" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram fa-sm instagram" style="color: white;"></i>
+                </div>
+            </div>
+            <div class="ele7b1">
+                <div class="img6">
+                    <img src="assets/team-3.jpg" alt="">
+                </div>
+                <p>Full Name</p>
+                <p>Designation</p>
+                <div class="ele7b1a">
+                    <i class="fa-brands fa-facebook-f fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram fa-sm" style="color: white;"></i>
+                </div>
+            </div>
+            <div class="ele7b1">
+                <div class="img6">
+                    <img src="assets/team-4.jpg" alt="">
+                </div>
+                <p>Full Name</p>
+                <p>Designation</p>
+                <div class="ele7b1a">
+                    <i class="fa-brands fa-facebook-f fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter fa-sm" style="color: white;"></i>
+                    <i class="fa-brands fa-instagram fa-sm" style="color: white;"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="ele9" style="background-color: rgb(38, 46, 55); color:white;" data-aos="fade-up">
+        <div class="ele91">
+          <!-- Company Info -->
+          <div class="ele9a">
+            <p class="hr-lines5 c1">Company</p>
+            <p><i class="fa-solid fa-chevron-right fa-2xs" style="color: white"></i>&nbsp&nbsp&nbsp<span class="p9">About Us</span></p>
+            <p><i class="fa-solid fa-chevron-right fa-2xs" style="color: white"></i>&nbsp&nbsp&nbsp<span class="p9">Contact Us</span></p>
+            <p><i class="fa-solid fa-chevron-right fa-2xs" style="color: white"></i>&nbsp&nbsp&nbsp<span class="p9">Reservation</span></p>
+            <p><i class="fa-solid fa-chevron-right fa-2xs" style="color: white"></i>&nbsp&nbsp&nbsp<span class="p9">Privacy Policy</span></p>
+            <p><i class="fa-solid fa-chevron-right fa-2xs" style="color: white"></i>&nbsp&nbsp&nbsp<span class="p9">Terms & Conditions</span></p>
+          </div>
+    
+          <!-- Contact Info -->
+          <div class="ele9b">
+            <p class="hr-lines5">Contact</p>
+            <p><i class="fa-solid fa-location-dot fa-sm" style="color: white;"></i>&nbsp&nbsp&nbsp<span class="p9">123 Street, New York, USA</span></p>
+            <p><i class="fa-solid fa-phone fa-sm" style="color: white;"></i>&nbsp&nbsp&nbsp<span class="p9">+01234567890</span></p>
+            <p><i class="fa-solid fa-envelope fa-sm" style="color: white;"></i>&nbsp&nbsp&nbsp<span class="p9">info@example.com</span></p>
+            <p>
+              <i class="fa-brands fa-twitter fa-sm t2" style="color: white;"></i>
+              <i class="fa-brands fa-facebook-f fa-sm f2" style="color: white;"></i>
+              <i class="fa-brands fa-youtube fa-sm y2" style="color: white;"></i>
+              <i class="fa-brands fa-linkedin-in fa-sm l2" style="color: white;"></i>
+            </p>
+          </div>
+    
+          <!-- Opening Hours -->
+          <div class="ele9c">
+            <p class="hr-lines5">Opening</p>
+            <p class="p9">Monday - Saturday</p>
+            <p class="p9">9AM - 9PM</p>
+            <p class="p9">Sunday</p>
+            <p class="p9">10AM - 8PM</p>
+          </div>
+    
+          <!-- Newsletter -->
+          <div class="ele9d">
+            <p class="hr-lines5">Newsletter</p>
+            <p style="opacity:0.8">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="ele9d1">
+              <input type="email" class="input-box" placeholder="Your Email">
+              <button>SIGN UP</button>
+            </div>
+          </div>
+        </div>
+    
+        <hr>
+    
+        <div class="ele9e">
+          <div class="ele9e1">
+            <p>&copy; Your Site Name, All Right Reserved. Designed By <u>HTML Codex</u></p>
+            <br>
+            <p>Distributed By <u>ThemeWagon</u></p>
+          </div>
+          <div class="ele9e2">
+            <p>Home</p>
+            <p>Cookies</p>
+            <p>Help</p>
+            <p>FAQs</p>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+      <script>
+        function toggleMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('active');
+        }
+
+        function toggleDropdownMobile(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('dropdownMenuMobile');
+            dropdown.classList.toggle('active');
+        }
+    </script>
+
+
+
+
+    <script>
+        let count1 = 0; // Initialize the first counter
+        let count2 = 0; // Initialize the second counter
+        let intervalId = setInterval(updateCounters, 200); // Increment every 200ms
+
+        // Function to update both counters
+        function updateCounters() {
+            if (count1 <= 15 && count2 <= 50) {
+                document.getElementById("counter1").textContent = count1; // Update the first counter in the HTML
+                document.getElementById("counter2").textContent = count2; // Update the second counter in the HTML
+                count1++; // Increment the first counter by 1
+                count2 += 3; // Increment the second counter by 2
+            } else {
+                clearInterval(intervalId); // Stop the interval when both counters exceed their limits
+            }
+        }
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 1000, // duration of animation in milliseconds
+      
+      once: false, // whether animation should happen only once (true) or every time you scroll (false)
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>        
