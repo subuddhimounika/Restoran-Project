@@ -475,9 +475,11 @@ background-color: grey;
     width:100%;
     /* border: 2px solid green; */
 }
-/* .e5sub p:nth-child(1),.e5sub p:nth-child(2){
-  border:2px solid red;
-} */
+
+.hr5{
+  margin:2.5% 35%;
+  opacity:0.2 !important;
+}
 .e5sub p:nth-child(2){
   padding: 0% !important;
 }
@@ -1493,6 +1495,7 @@ background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color */
   }
   .ele5c{
     height:65rem;
+    row-gap: 2%;
   }
 
   /* flex grow */
