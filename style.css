@@ -1462,7 +1462,6 @@ background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background color */
   }
 }
 
-
 @media screen and (min-width:379px) and (max-width: 485px) {
   /* 4th section */
   .ele4{
